@@ -95,7 +95,7 @@ input {
 
 .welcome-msg {
     display: grid;
-    grid-template: 40px 40px / 80px 400px; /* Change to 1fr 1fr / 2fr 5fr */
+    grid-template: 40px 40px / 80px 400px;
     justify-content: start;
     align-items: center;
     gap: 10px;
@@ -139,4 +139,64 @@ input {
     margin-top: 2px;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content h3 {
+    font-size: 28px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 20px;
+}
+
+.boxes > .box {
+    background-color: white;
+    border-left: 10px solid yellow;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feeds-box {
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px
+}
+
+.feeds-box > .feed {
+    border-bottom: 1px solid grey;
+}
+
+.profiles-box {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+}
+
+.profiles-box > .profile {
+    display: grid;
+    grid-template: 20px 20px / 40px 200px;
+    gap: 10px;
+}
+
+.profiles-box > .profile > img  {
+    grid-row: 1 / 3;
+}
+
+.profiles-box > .profile > p {
+    font-size: 15px;
+}
+
+.profiles-box > .profile > h3 {
+    font-size: 18px;
+    margin: 0;
 }
